@@ -1,0 +1,60 @@
+feature,cic_scan_median,cic_benign_median,kali_median,kali_pct_zero
+Destination Port,3546.0,80.0,3775.0,0.0
+Flow Duration,50.0,39979.0,7967.948913574219,0.3
+Total Fwd Packets,1.0,2.0,1.0,0.0
+Total Backward Packets,1.0,2.0,1.0,0.0
+Total Length of Fwd Packets,0.0,68.0,0.0,100.0
+Total Length of Bwd Packets,6.0,144.0,0.0,100.0
+Fwd Packet Length Max,0.0,41.0,0.0,100.0
+Fwd Packet Length Min,0.0,6.0,0.0,100.0
+Fwd Packet Length Mean,0.0,38.0,0.0,100.0
+Fwd Packet Length Std,0.0,0.0,0.0,100.0
+Bwd Packet Length Max,6.0,92.0,0.0,100.0
+Bwd Packet Length Min,6.0,6.0,0.0,100.0
+Bwd Packet Length Mean,6.0,83.5625,0.0,100.0
+Bwd Packet Length Std,0.0,0.0,0.0,100.0
+Flow Bytes/s,137931.03,4249.6157,0.0,100.0
+Flow Packets/s,40000.0,85.01594,245.8668477523671,0.3
+Flow IAT Mean,50.0,16053.0,7874.0715980529785,0.3
+Flow IAT Std,0.0,223.53622,0.0,97.7
+Flow IAT Max,50.0,31594.0,7967.948913574219,0.3
+Flow IAT Min,49.0,4.0,7390.975952148437,0.4
+Fwd IAT Total,0.0,4.0,0.0,97.7
+Fwd IAT Mean,0.0,4.0,0.0,97.7
+Fwd IAT Std,0.0,0.0,0.0,100.0
+Fwd IAT Max,0.0,4.0,0.0,97.7
+Fwd IAT Min,0.0,3.0,0.0,97.7
+Bwd IAT Total,0.0,3.0,0.0,100.0
+Bwd IAT Mean,0.0,3.0,0.0,100.0
+Bwd IAT Std,0.0,0.0,0.0,100.0
+Bwd IAT Max,0.0,3.0,0.0,100.0
+Bwd IAT Min,0.0,2.0,0.0,100.0
+Fwd PSH Flags,0.0,0.0,0.0,100.0
+Bwd PSH Flags,0.0,0.0,0.0,100.0
+Fwd URG Flags,0.0,0.0,0.0,100.0
+Bwd URG Flags,0.0,0.0,0.0,100.0
+Fwd Packets/s,20000.0,43.13878,125.5178357672971,0.3
+Bwd Packets/s,20000.0,25.045708,122.47559101053534,0.3
+Min Packet Length,0.0,6.0,0.0,100.0
+Max Packet Length,6.0,99.0,0.0,100.0
+FIN Flag Count,0.0,0.0,0.0,100.0
+SYN Flag Count,0.0,0.0,1.0,0.0
+RST Flag Count,0.0,0.0,1.0,0.0
+PSH Flag Count,1.0,0.0,0.0,100.0
+ACK Flag Count,0.0,0.0,1.0,0.0
+URG Flag Count,0.0,0.0,0.0,100.0
+CWE Flag Count,0.0,0.0,0.0,100.0
+ECE Flag Count,0.0,0.0,0.0,100.0
+Avg Fwd Segment Size,0.0,38.0,0.0,100.0
+Avg Bwd Segment Size,6.0,83.5625,0.0,100.0
+Init_Win_bytes_forward,29200.0,122.0,1024.0,0.0
+Init_Win_bytes_backward,0.0,-1.0,0.0,97.7
+act_data_pkt_fwd,0.0,1.0,0.0,100.0
+Active Mean,0.0,0.0,7967.948913574219,0.3
+Active Std,0.0,0.0,0.0,100.0
+Active Max,0.0,0.0,7967.948913574219,0.3
+Active Min,0.0,0.0,7967.948913574219,0.3
+Idle Mean,0.0,0.0,0.0,100.0
+Idle Std,0.0,0.0,0.0,100.0
+Idle Max,0.0,0.0,0.0,100.0
+Idle Min,0.0,0.0,0.0,100.0

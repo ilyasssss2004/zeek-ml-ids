@@ -1,0 +1,61 @@
+Start: (2830743, 80)
+Dropped 2867 rows with inf/NaN
+Dropped 307078 duplicate rows
+
+Columns with negative values:
+Init_Win_bytes_backward    1215625
+Init_Win_bytes_forward      911012
+Flow IAT Min                  2880
+Flow Duration                  107
+Flow Packets/s                 107
+Flow IAT Mean                  107
+Flow IAT Max                   107
+Flow Bytes/s                    78
+min_seg_size_forward            35
+Fwd Header Length               35
+Bwd Header Length               22
+Fwd IAT Min                     17
+
+Final shape: (2520798, 80)
+
+Label family counts:
+label_family
+BENIGN                        2095057
+DoS Hulk                       172846
+DDoS                           128014
+PortScan                        90694
+DoS GoldenEye                   10286
+FTP-Patator                      5931
+DoS slowloris                    5385
+DoS Slowhttptest                 5228
+SSH-Patator                      3219
+Bot                              1948
+Web Attack - Brute Force         1470
+Web Attack - XSS                  652
+Infiltration                       36
+Web Attack - Sql Injection         21
+Heartbleed                         11
+
+Binary balance:
+label_binary
+0    0.8311
+1    0.1689
+
+Families per source file:
+source_file                 Friday-Afternoon-DDoS  Friday-Afternoon-PortScan  Friday-Morning-Bot  Monday-WorkingHours  Thursday-Afternoon-Infiltration  Thursday-Morning-WebAttacks  Tuesday-WorkingHours  Wednesday-WorkingHours
+label_family                                                                                                                                                                                                                     
+BENIGN                                      95068                     121560              178149               502464                           245820                       154436                400833                  396727
+Bot                                             0                          0                1948                    0                                0                            0                     0                       0
+DDoS                                       128014                          0                   0                    0                                0                            0                     0                       0
+DoS GoldenEye                                   0                          0                   0                    0                                0                            0                     0                   10286
+DoS Hulk                                        0                          0                   0                    0                                0                            0                     0                  172846
+DoS Slowhttptest                                0                          0                   0                    0                                0                            0                     0                    5228
+DoS slowloris                                   0                          0                   0                    0                                0                            0                     0                    5385
+FTP-Patator                                     0                          0                   0                    0                                0                            0                  5931                       0
+Heartbleed                                      0                          0                   0                    0                                0                            0                     0                      11
+Infiltration                                    0                          0                   0                    0                               36                            0                     0                       0
+PortScan                                        0                      90694                   0                    0                                0                            0                     0                       0
+SSH-Patator                                     0                          0                   0                    0                                0                            0                  3219                       0
+Web Attack - Brute Force                        0                          0                   0                    0                                0                         1470                     0                       0
+Web Attack - Sql Injection                      0                          0                   0                    0                                0                           21                     0                       0
+Web Attack - XSS                                0                          0                   0                    0                                0                          652                     0                       0

@@ -1,0 +1,1470 @@
+==============================================
+[1/15] attack_nmap_synscan_run1
+CMD: nmap -sS -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-10 18:15 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0095s latency).
+Not shown: 65505 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 221.01 seconds
+133256 packets captured
+133256 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.7M Oct 10 22:19 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run1.pcap
+
+==============================================
+[2/15] attack_nmap_connect_run1
+CMD: nmap -sT -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-10 18:19 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.071s latency).
+Not shown: 65505 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 64.32 seconds
+131281 packets captured
+131281 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 11M Oct 10 22:20 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run1.pcap
+
+==============================================
+[3/15] attack_nmap_stealth_run1
+CMD: nmap -sF -sN -sX -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+You specified more than one type of TCP scan.  Please choose only one of -sA, -b, -sT, -sF, -sI, -sM, -sN, -sS, -sW, and -sX
+QUITTING!
+43 packets captured
+43 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_stealth_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 12K Oct 10 22:20 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_stealth_run1.pcap
+
+==============================================
+[4/15] attack_nmap_slow_run1
+CMD: nmap -sS -T2 -p 1-200 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-10 18:20 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0023s latency).
+Not shown: 192 closed tcp ports (reset)
+PORT    STATE SERVICE
+21/tcp  open  ftp
+22/tcp  open  ssh
+23/tcp  open  telnet
+25/tcp  open  smtp
+53/tcp  open  domain
+80/tcp  open  http
+111/tcp open  rpcbind
+139/tcp open  netbios-ssn
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 86.75 seconds
+482 packets captured
+482 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_slow_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 45K Oct 10 22:21 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_slow_run1.pcap
+
+==============================================
+[5/15] attack_nmap_pingsweep_run1
+CMD: nmap -sn 192.168.100.0/24
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-10 18:22 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.21
+Host is up (0.0013s latency).
+MAC Address: 08:00:27:46:78:25 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.30
+Host is up (0.0011s latency).
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Nmap scan report for 192.168.100.20
+Host is up.
+Nmap done: 256 IP addresses (3 hosts up) scanned in 2.20 seconds
+569 packets captured
+569 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_pingsweep_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 52K Oct 10 22:22 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_pingsweep_run1.pcap
+
+==============================================
+[6/15] attack_hydra_ftp_run1
+CMD: timeout 60 hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt -t 16 ftp://192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-10-10 18:22:09
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ftp://192.168.100.30:21/
+The session file ./hydra.restore was written. Type "hydra -R" to resume session.
+3059 packets captured
+3059 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ftp_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 279K Oct 10 22:23 /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ftp_run1.pcap
+
+==============================================
+[7/15] attack_hydra_ssh_run1
+CMD: timeout 60 hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt -t 16 ssh://192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-10-10 18:23:17
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ssh://192.168.100.30:22/
+[ERROR] could not connect to ssh://192.168.100.30:22 - kex error : no match for method mac algo client->server: server [hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96], client [hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha2-512]
+69 packets captured
+69 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ssh_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 17K Oct 10 22:23 /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ssh_run1.pcap
+
+==============================================
+[8/15] attack_hping_synflood_run1
+CMD: timeout 20 hping3 -S -p 80 --flood 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+hping in flood mode, no replies will be shown
+
+--- 192.168.100.30 hping statistic ---
+713394 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.100.30 (eth0 192.168.100.30): S set, 40 headers + 0 data bytes
+717471 packets captured
+717479 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hping_synflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 53M Oct 10 22:24 /home/vboxuser/ids-project/pcaps_lab/attack_hping_synflood_run1.pcap
+
+==============================================
+[9/15] attack_hping_udpflood_run1
+CMD: timeout 20 hping3 --udp -p 53 --flood 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+hping in flood mode, no replies will be shown
+HPING 192.168.100.30 (eth0 192.168.100.30): udp mode set, 28 headers + 0 data bytes
+
+--- 192.168.100.30 hping statistic ---
+20375 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+20597 packets captured
+20597 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hping_udpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.6M Oct 10 22:24 /home/vboxuser/ids-project/pcaps_lab/attack_hping_udpflood_run1.pcap
+
+==============================================
+[10/15] attack_ab_httpflood_run1
+CMD: ab -n 5000 -c 50 http://192.168.100.30/
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+This is ApacheBench, Version 2.3 <$Revision: 1923142 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.30 (be patient)
+Completed 500 requests
+Completed 1000 requests
+Completed 1500 requests
+Completed 2000 requests
+Completed 2500 requests
+Completed 3000 requests
+Completed 3500 requests
+Completed 4000 requests
+Completed 4500 requests
+Completed 5000 requests
+Finished 5000 requests
+
+
+Server Software:        Apache/2.2.8
+Server Hostname:        192.168.100.30
+Server Port:            80
+
+Document Path:          /
+Document Length:        891 bytes
+
+Concurrency Level:      50
+Time taken for tests:   494.390 seconds
+Complete requests:      5000
+Failed requests:        0
+Total transferred:      5333673 bytes
+HTML transferred:       4455000 bytes
+Requests per second:    10.11 [#/sec] (mean)
+Time per request:       4943.901 [ms] (mean)
+Time per request:       98.878 [ms] (mean, across all concurrent requests)
+Transfer rate:          10.54 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        1  114 311.1      6    5891
+Processing:   126 4809 2786.4   3950   17340
+Waiting:       49 4249 2557.3   3396   15953
+Total:        132 4923 2844.5   4035   17754
+
+Percentage of the requests served within a certain time (ms)
+  50%   4035
+  66%   5812
+  75%   6858
+  80%   7408
+  90%   9065
+  95%  10254
+  98%  11787
+  99%  12891
+ 100%  17754 (longest request)
+67112 packets captured
+67112 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_ab_httpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 11M Oct 10 22:32 /home/vboxuser/ids-project/pcaps_lab/attack_ab_httpflood_run1.pcap
+
+==============================================
+[11/15] attack_nikto_run1
+CMD: timeout 120 nikto -h http://192.168.100.30/
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          192.168.100.30
++ Target Hostname:    192.168.100.30
++ Target Port:        80
++ Start Time:         2026-10-10 18:32:55 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.8 (Ubuntu) DAV/2
++ /: Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10.
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ /index: Uncommon header 'tcn' found, with contents: list.
++ /index: Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. The following alternatives for 'index' were found: index.php. See: http://www.wisec.it/sectou.php?id=4698ebdc59d15,https://exchange.xforce.ibmcloud.com/vulnerabilities/8275
++ Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ /: HTTP TRACE method is active which suggests the host is vulnerable to XST. See: https://owasp.org/www-community/attacks/Cross_Site_Tracing
++ /phpinfo.php: Output from the phpinfo() function was found.
++ /doc/: Directory indexing found.
++ /doc/: The /doc/ directory is browsable. This may be /usr/doc. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0678
++ /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
+6493 packets captured
+6493 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nikto_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 2.6M Oct 10 22:34 /home/vboxuser/ids-project/pcaps_lab/attack_nikto_run1.pcap
+
+==============================================
+[12/15] attack_sqlmap_run1
+CMD: timeout 120 sqlmap -u "http://192.168.100.30/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --batch --level=1
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+        ___
+       __H__
+ ___ ___[,]_____ ___ ___  {1.9.11#stable}
+|_ -| . [(]     | .'| . |
+|___|_  [)]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 18:35:03 /2026-10-10/
+
+[1/1] URL:
+GET http://192.168.100.30/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit
+do you want to test this URL? [Y/n/q]
+> Y
+[18:35:03] [INFO] testing URL 'http://192.168.100.30/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit'
+[18:35:03] [INFO] using '/home/kali/.local/share/sqlmap/output/results-10102026_0635pm.csv' as the CSV results file in multiple targets mode
+[18:35:03] [INFO] testing connection to the target URL
+got a 302 redirect to 'http://192.168.100.30/dvwa/login.php'. Do you want to follow? [Y/n] Y
+you have not declared cookie(s), while server wants to set its own ('PHPSESSID=6c543f7d7b3...e0d6850cd5;security=high;security=high'). Do you want to use those [Y/n] Y
+[18:35:04] [INFO] checking if the target is protected by some kind of WAF/IPS
+[18:35:04] [INFO] testing if the target URL content is stable
+[18:35:04] [WARNING] GET parameter 'id' does not appear to be dynamic
+[18:35:04] [WARNING] heuristic (basic) test shows that GET parameter 'id' might not be injectable
+[18:35:04] [INFO] testing for SQL injection on GET parameter 'id'
+[18:35:04] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[18:35:10] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[18:35:11] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[18:35:16] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[18:35:20] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[18:35:23] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[18:35:27] [INFO] testing 'Generic inline queries'
+[18:35:28] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[18:35:28] [WARNING] time-based comparison requires larger statistical model, please wait. (done)
+[18:35:33] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[18:35:36] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[18:35:39] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[18:35:42] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[18:35:44] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[18:35:48] [INFO] testing 'Oracle AND time-based blind'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[18:35:51] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[18:35:59] [WARNING] GET parameter 'id' does not seem to be injectable
+[18:35:59] [WARNING] GET parameter 'Submit' does not appear to be dynamic
+[18:36:00] [WARNING] heuristic (basic) test shows that GET parameter 'Submit' might not be injectable
+[18:36:01] [INFO] testing for SQL injection on GET parameter 'Submit'
+[18:36:01] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[18:36:04] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[18:36:04] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[18:36:09] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[18:36:14] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[18:36:16] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[18:36:20] [INFO] testing 'Generic inline queries'
+[18:36:21] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[18:36:26] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[18:36:27] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[18:36:31] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[18:36:35] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[18:36:40] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[18:36:43] [INFO] testing 'Oracle AND time-based blind'
+[18:36:47] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[18:36:54] [WARNING] GET parameter 'Submit' does not seem to be injectable
+[18:36:54] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[18:36:54] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/home/kali/.local/share/sqlmap/output/results-10102026_0635pm.csv'
+[18:36:54] [WARNING] your sqlmap version is outdated
+
+[*] ending @ 18:36:54 /2026-10-10/
+
+3674 packets captured
+3674 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_sqlmap_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 699K Oct 10 22:36 /home/vboxuser/ids-project/pcaps_lab/attack_sqlmap_run1.pcap
+
+==============================================
+[13/15] benign_web_run1
+CMD: for i in $(seq 1 30); do curl -s http://192.168.100.30/ > /dev/null; sleep 1; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+344 packets captured
+344 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_web_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 70K Oct 10 22:37 /home/vboxuser/ids-project/pcaps_lab/benign_web_run1.pcap
+
+==============================================
+[14/15] benign_ftp_login_run1
+CMD: for i in $(seq 1 10); do curl -s ftp://msfadmin:msfadmin@192.168.100.30/ > /dev/null; sleep 2; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+385 packets captured
+385 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_ftp_login_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 44K Oct 10 22:38 /home/vboxuser/ids-project/pcaps_lab/benign_ftp_login_run1.pcap
+
+==============================================
+[15/15] benign_ssh_run1
+CMD: for i in $(seq 1 10); do sshpass -p msfadmin ssh -o StrictHostKeyChecking=no msfadmin@192.168.100.30 'echo hi' > /dev/null 2>&1; sleep 2; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+183 packets captured
+183 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_ssh_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 47K Oct 10 22:38 /home/vboxuser/ids-project/pcaps_lab/benign_ssh_run1.pcap
+
+ALL DONE.
+total 89M
+-rw-rw-r-- 1 vboxuser vboxuser  11M Oct 10 22:32 attack_ab_httpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  53M Oct 10 22:24 attack_hping_synflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.6M Oct 10 22:24 attack_hping_udpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 279K Oct 10 22:23 attack_hydra_ftp_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  17K Oct 10 22:23 attack_hydra_ssh_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 2.6M Oct 10 22:34 attack_nikto_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  11M Oct 10 22:20 attack_nmap_connect_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  52K Oct 10 22:22 attack_nmap_pingsweep_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  45K Oct 10 22:21 attack_nmap_slow_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  12K Oct 10 22:20 attack_nmap_stealth_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.7M Oct 10 22:19 attack_nmap_synscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 699K Oct 10 22:36 attack_sqlmap_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  44K Oct 10 22:38 benign_ftp_login_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  47K Oct 10 22:38 benign_ssh_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  70K Oct 10 22:37 benign_web_run1.pcap
+==============================================
+[1/20] attack_nmap_synscan_run2
+CMD: nmap -sS -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:10 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0027s latency).
+Not shown: 65505 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 32.39 seconds
+131182 packets captured
+131182 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.6M Oct 11 16:10 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run2.pcap
+
+==============================================
+[2/20] attack_nmap_connect_run2
+CMD: nmap -sT -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:10 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.043s latency).
+Not shown: 65505 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 28.02 seconds
+131388 packets captured
+131388 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 11M Oct 11 16:11 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run2.pcap
+
+==============================================
+[3/20] attack_nmap_finscan_run1
+CMD: nmap -sF -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:11 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0015s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 2.26 seconds
+1002 packets captured
+1002 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_finscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:11 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_finscan_run1.pcap
+
+==============================================
+[4/20] attack_nmap_nullscan_run1
+CMD: nmap -sN -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:11 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0045s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.67 seconds
+1002 packets captured
+1002 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_nullscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:11 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_nullscan_run1.pcap
+
+==============================================
+[5/20] attack_nmap_xmasscan_run1
+CMD: nmap -sX -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:11 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0019s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.73 seconds
+1002 packets captured
+1002 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_xmasscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:11 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_xmasscan_run1.pcap
+
+==============================================
+[6/20] attack_nmap_slow_run2
+CMD: nmap -sS -T1 -p 1-100 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:11 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+==============================================
+[1/20] attack_nmap_synscan_run2
+CMD: nmap -sS -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:25 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0038s latency).
+Not shown: 65505 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 34.47 seconds
+131110 packets captured
+131110 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.6M Oct 11 16:25 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run2.pcap
+
+==============================================
+[2/20] attack_nmap_connect_run2
+CMD: nmap -sT -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:25 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0046s latency).
+Not shown: 65505 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 27.10 seconds
+131526 packets captured
+131526 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 11M Oct 11 16:26 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run2.pcap
+
+==============================================
+[3/20] attack_nmap_finscan_run1
+CMD: nmap -sF -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:26 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0016s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 2.44 seconds
+1004 packets captured
+1004 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_finscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:26 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_finscan_run1.pcap
+
+==============================================
+[4/20] attack_nmap_nullscan_run1
+CMD: nmap -sN -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:26 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0038s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.65 seconds
+1002 packets captured
+1002 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_nullscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:26 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_nullscan_run1.pcap
+
+==============================================
+[5/20] attack_nmap_xmasscan_run1
+CMD: nmap -sX -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:26 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0050s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.71 seconds
+1004 packets captured
+1004 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_xmasscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:26 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_xmasscan_run1.pcap
+
+==============================================
+[6/20] attack_nmap_slow_run2
+CMD: nmap -sS -T1 -p 1-100 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:26 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+==============================================
+[1/20] attack_nmap_synscan_run2
+CMD: nmap -sS -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:33 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0033s latency).
+Not shown: 65505 closed tcp ports (reset)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 46.39 seconds
+131122 packets captured
+131122 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.6M Oct 11 16:34 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_synscan_run2.pcap
+
+==============================================
+[2/20] attack_nmap_connect_run2
+CMD: nmap -sT -T4 -p- 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:34 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0024s latency).
+Not shown: 65505 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+21/tcp    open  ftp
+22/tcp    open  ssh
+23/tcp    open  telnet
+25/tcp    open  smtp
+53/tcp    open  domain
+80/tcp    open  http
+111/tcp   open  rpcbind
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  shell
+1099/tcp  open  rmiregistry
+1524/tcp  open  ingreslock
+2049/tcp  open  nfs
+2121/tcp  open  ccproxy-ftp
+3306/tcp  open  mysql
+3632/tcp  open  distccd
+5432/tcp  open  postgresql
+5900/tcp  open  vnc
+6000/tcp  open  X11
+6667/tcp  open  irc
+6697/tcp  open  ircs-u
+8009/tcp  open  ajp13
+8180/tcp  open  unknown
+8787/tcp  open  msgsrvr
+35201/tcp open  unknown
+36824/tcp open  unknown
+44391/tcp open  unknown
+49774/tcp open  unknown
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 19.97 seconds
+131150 packets captured
+131150 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 11M Oct 11 16:34 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_connect_run2.pcap
+
+==============================================
+[3/20] attack_nmap_finscan_run1
+CMD: nmap -sF -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:34 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0021s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.41 seconds
+1004 packets captured
+1004 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_finscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:34 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_finscan_run1.pcap
+
+==============================================
+[4/20] attack_nmap_nullscan_run1
+CMD: nmap -sN -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:34 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0013s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.39 seconds
+1002 packets captured
+1002 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_nullscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:34 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_nullscan_run1.pcap
+
+==============================================
+[5/20] attack_nmap_xmasscan_run1
+CMD: nmap -sX -T3 -p 1-500 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:34 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0016s latency).
+Not shown: 491 closed tcp ports (reset)
+PORT    STATE         SERVICE
+21/tcp  open|filtered ftp
+22/tcp  open|filtered ssh
+23/tcp  open|filtered telnet
+25/tcp  open|filtered smtp
+53/tcp  open|filtered domain
+80/tcp  open|filtered http
+111/tcp open|filtered rpcbind
+139/tcp open|filtered netbios-ssn
+445/tcp open|filtered microsoft-ds
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.39 seconds
+1004 packets captured
+1004 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_xmasscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 75K Oct 11 16:34 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_xmasscan_run1.pcap
+
+==============================================
+[6/20] attack_nmap_slow_run2
+CMD: nmap -sS -T1 -p 1-100 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Starting Nmap 7.95 ( https://nmap.org ) at 2026-10-11 12:34 EDT
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.100.30
+Host is up (0.0032s latency).
+Not shown: 94 closed tcp ports (reset)
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+23/tcp open  telnet
+25/tcp open  smtp
+53/tcp open  domain
+80/tcp open  http
+MAC Address: 08:00:27:53:51:DE (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 1654.77 seconds
+588 packets captured
+588 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nmap_slow_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 45K Oct 11 17:02 /home/vboxuser/ids-project/pcaps_lab/attack_nmap_slow_run2.pcap
+
+==============================================
+[7/20] attack_hydra_ftp_run2
+CMD: timeout 60 hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt -t 16 ftp://192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-10-11 13:02:36
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ftp://192.168.100.30:21/
+The session file ./hydra.restore was written. Type "hydra -R" to resume session.
+2197 packets captured
+2197 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ftp_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 195K Oct 11 17:03 /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ftp_run2.pcap
+
+==============================================
+[8/20] attack_hydra_ssh_run2
+CMD: timeout 90 hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt -t 4 ssh://192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-10-11 13:03:47
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 4 tasks per 1 server, overall 4 tasks, 14344399 login tries (l:1/p:14344399), ~3586100 tries per task
+[DATA] attacking ssh://192.168.100.30:22/
+[ERROR] could not connect to ssh://192.168.100.30:22 - kex error : no match for method mac algo client->server: server [hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96], client [hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha2-512]
+18 packets captured
+18 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ssh_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 3.3K Oct 11 17:04 /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ssh_run2.pcap
+
+==============================================
+[9/20] attack_hydra_ssh_run3
+CMD: timeout 90 hydra -l root -P /usr/share/wordlists/rockyou.txt -t 4 ssh://192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-10-11 13:04:07
+[WARNING] Restorefile (you have 10 seconds to abort... (use option -I to skip waiting)) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 4 tasks per 1 server, overall 4 tasks, 14344399 login tries (l:1/p:14344399), ~3586100 tries per task
+[DATA] attacking ssh://192.168.100.30:22/
+[ERROR] could not connect to ssh://192.168.100.30:22 - kex error : no match for method mac algo client->server: server [hmac-md5,hmac-sha1,umac-64@openssh.com,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96], client [hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha2-512]
+14 packets captured
+14 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ssh_run3.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 3.0K Oct 11 17:04 /home/vboxuser/ids-project/pcaps_lab/attack_hydra_ssh_run3.pcap
+
+==============================================
+[10/20] attack_hping_synflood_run2
+CMD: timeout 20 hping3 -S -p 80 --flood 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+hping in flood mode, no replies will be shown
+HPING 192.168.100.30 (eth0 192.168.100.30): S set, 40 headers + 0 data bytes
+
+--- 192.168.100.30 hping statistic ---
+169502 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+193906 packets captured
+193906 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hping_synflood_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 15M Oct 11 17:04 /home/vboxuser/ids-project/pcaps_lab/attack_hping_synflood_run2.pcap
+
+==============================================
+[11/20] attack_hping_udpflood_run2
+CMD: timeout 20 hping3 --udp -p 53 --flood 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+hping in flood mode, no replies will be shown
+
+--- 192.168.100.30 hping statistic ---
+25391 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+HPING 192.168.100.30 (eth0 192.168.100.30): udp mode set, 28 headers + 0 data bytes
+25406 packets captured
+25406 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hping_udpflood_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.9M Oct 11 17:05 /home/vboxuser/ids-project/pcaps_lab/attack_hping_udpflood_run2.pcap
+
+==============================================
+[12/20] attack_hping_icmpflood_run1
+CMD: timeout 20 hping3 --icmp --flood 192.168.100.30
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+hping in flood mode, no replies will be shown
+HPING 192.168.100.30 (eth0 192.168.100.30): icmp mode set, 28 headers + 0 data bytes
+
+--- 192.168.100.30 hping statistic ---
+31511 packets transmitted, 0 packets received, 100% packet loss
+round-trip min/avg/max = 0.0/0.0/0.0 ms
+63028 packets captured
+63028 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_hping_icmpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 4.6M Oct 11 17:05 /home/vboxuser/ids-project/pcaps_lab/attack_hping_icmpflood_run1.pcap
+
+==============================================
+[13/20] attack_ab_httpflood_run2
+CMD: ab -n 8000 -c 80 http://192.168.100.30/
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+This is ApacheBench, Version 2.3 <$Revision: 1923142 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking 192.168.100.30 (be patient)
+Completed 800 requests
+Completed 1600 requests
+Completed 2400 requests
+Completed 3200 requests
+Completed 4000 requests
+Completed 4800 requests
+Completed 5600 requests
+Completed 6400 requests
+Completed 7200 requests
+Completed 8000 requests
+Finished 8000 requests
+
+
+Server Software:        Apache/2.2.8
+Server Hostname:        192.168.100.30
+Server Port:            80
+
+Document Path:          /
+Document Length:        891 bytes
+
+Concurrency Level:      80
+Time taken for tests:   265.610 seconds
+Complete requests:      8000
+Failed requests:        0
+Total transferred:      8591778 bytes
+HTML transferred:       7128000 bytes
+Requests per second:    30.12 [#/sec] (mean)
+Time per request:       2656.100 [ms] (mean)
+Time per request:       33.201 [ms] (mean, across all concurrent requests)
+Transfer rate:          31.59 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    8  50.1      3     827
+Processing:   306 2640 1585.0   2528   10893
+Waiting:       47 2270 1459.5   2297   10661
+Total:        326 2649 1586.1   2541   10897
+
+Percentage of the requests served within a certain time (ms)
+  50%   2541
+  66%   3086
+  75%   3563
+  80%   3898
+  90%   4842
+  95%   5562
+  98%   6490
+  99%   7244
+ 100%  10897 (longest request)
+93412 packets captured
+93412 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_ab_httpflood_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 17M Oct 11 17:10 /home/vboxuser/ids-project/pcaps_lab/attack_ab_httpflood_run2.pcap
+
+==============================================
+[14/20] attack_nikto_run2
+CMD: timeout 120 nikto -h http://192.168.100.30/ -Tuning 1
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+- Nikto v2.5.0
+---------------------------------------------------------------------------
+4 packets captured
+4 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_nikto_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 733 Oct 11 17:12 /home/vboxuser/ids-project/pcaps_lab/attack_nikto_run2.pcap
+
+==============================================
+[15/20] attack_sqlmap_run2
+CMD: timeout 120 sqlmap -u "http://192.168.100.30/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit" --batch --level=2
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+        ___
+       __H__
+ ___ ___[.]_____ ___ ___  {1.9.11#stable}
+|_ -| . [)]     | .'| . |
+|___|_  [,]_|_|_|__,|  _|
+      |_|V...       |_|   https://sqlmap.org
+
+[!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
+
+[*] starting @ 13:12:29 /2026-10-11/
+
+[1/1] URL:
+GET http://192.168.100.30/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit
+do you want to test this URL? [Y/n/q]
+> Y
+[13:12:29] [INFO] testing URL 'http://192.168.100.30/dvwa/vulnerabilities/sqli/?id=1&Submit=Submit'
+[13:12:29] [INFO] using '/home/kali/.local/share/sqlmap/output/results-10112026_0112pm.csv' as the CSV results file in multiple targets mode
+[13:12:29] [INFO] testing connection to the target URL
+got a 302 redirect to 'http://192.168.100.30/dvwa/login.php'. Do you want to follow? [Y/n] Y
+you have not declared cookie(s), while server wants to set its own ('PHPSESSID=13611d0b4b8...85202f16fc;security=high;security=high'). Do you want to use those [Y/n] Y
+[13:12:29] [INFO] testing if the target URL content is stable
+[13:12:30] [WARNING] GET parameter 'id' does not appear to be dynamic
+[13:12:30] [WARNING] heuristic (basic) test shows that GET parameter 'id' might not be injectable
+[13:12:30] [INFO] testing for SQL injection on GET parameter 'id'
+[13:12:30] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[13:12:31] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[13:12:32] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[13:12:33] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[13:12:34] [INFO] testing 'PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)'
+[13:12:35] [INFO] testing 'Oracle AND boolean-based blind - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[13:12:36] [INFO] testing 'SQLite AND boolean-based blind - WHERE, HAVING, GROUP BY or HAVING clause (JSON)'
+[13:12:37] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[13:12:37] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[13:12:37] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[13:12:37] [INFO] testing 'MySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause'
+[13:12:37] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY, GROUP BY clause'
+[13:12:37] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[13:12:38] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[13:12:39] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[13:12:40] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[13:12:41] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONVERT)'
+[13:12:42] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONCAT)'
+[13:12:44] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[13:12:45] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (UTL_INADDR.GET_HOST_ADDRESS)'
+[13:12:46] [INFO] testing 'MySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)'
+[13:12:47] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[13:12:47] [INFO] testing 'MySQL >= 5.1 error-based - Parameter replace (EXTRACTVALUE)'
+[13:12:47] [INFO] testing 'PostgreSQL error-based - Parameter replace'
+[13:12:47] [INFO] testing 'Microsoft SQL Server/Sybase error-based - Stacking (EXEC)'
+[13:12:48] [INFO] testing 'Generic inline queries'
+[13:12:48] [INFO] testing 'MySQL inline queries'
+[13:12:48] [INFO] testing 'PostgreSQL inline queries'
+[13:12:48] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[13:12:48] [INFO] testing 'Oracle inline queries'
+[13:12:48] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[13:12:49] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[13:12:50] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[13:12:50] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (DECLARE - comment)'
+[13:12:51] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[13:12:52] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[13:12:53] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (SLEEP)'
+[13:12:54] [INFO] testing 'MySQL >= 5.0.12 RLIKE time-based blind'
+[13:12:55] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[13:12:56] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[13:12:57] [INFO] testing 'Oracle AND time-based blind'
+[13:12:58] [INFO] testing 'MySQL >= 5.0.12 time-based blind - Parameter replace'
+it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
+[13:12:59] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[13:13:01] [INFO] testing 'MySQL UNION query (NULL) - 1 to 10 columns'
+[13:13:03] [WARNING] GET parameter 'id' does not seem to be injectable
+[13:13:03] [WARNING] GET parameter 'Submit' does not appear to be dynamic
+[13:13:03] [WARNING] heuristic (basic) test shows that GET parameter 'Submit' might not be injectable
+[13:13:03] [INFO] testing for SQL injection on GET parameter 'Submit'
+[13:13:03] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[13:13:04] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (subquery - comment)'
+[13:13:05] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause (comment)'
+[13:13:06] [INFO] testing 'MySQL RLIKE boolean-based blind - WHERE, HAVING, ORDER BY or GROUP BY clause'
+[13:13:07] [INFO] testing 'PostgreSQL AND boolean-based blind - WHERE or HAVING clause (CAST)'
+[13:13:08] [INFO] testing 'Oracle AND boolean-based blind - WHERE or HAVING clause (CTXSYS.DRITHSX.SN)'
+[13:13:09] [INFO] testing 'SQLite AND boolean-based blind - WHERE, HAVING, GROUP BY or HAVING clause (JSON)'
+[13:13:10] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[13:13:10] [INFO] testing 'Boolean-based blind - Parameter replace (DUAL)'
+[13:13:10] [INFO] testing 'Boolean-based blind - Parameter replace (CASE)'
+[13:13:10] [INFO] testing 'MySQL >= 5.0 boolean-based blind - ORDER BY, GROUP BY clause'
+[13:13:10] [INFO] testing 'PostgreSQL boolean-based blind - ORDER BY, GROUP BY clause'
+[13:13:10] [INFO] testing 'MySQL >= 5.0 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)'
+[13:13:11] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[13:13:12] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[13:13:13] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[13:13:14] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONVERT)'
+[13:13:15] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (CONCAT)'
+[13:13:16] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[13:13:17] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (UTL_INADDR.GET_HOST_ADDRESS)'
+[13:13:19] [INFO] testing 'MySQL >= 5.1 error-based - PROCEDURE ANALYSE (EXTRACTVALUE)'
+[13:13:20] [INFO] testing 'MySQL >= 5.0 error-based - Parameter replace (FLOOR)'
+[13:13:20] [INFO] testing 'MySQL >= 5.1 error-based - Parameter replace (EXTRACTVALUE)'
+[13:13:20] [INFO] testing 'PostgreSQL error-based - Parameter replace'
+[13:13:20] [INFO] testing 'Microsoft SQL Server/Sybase error-based - Stacking (EXEC)'
+[13:13:21] [INFO] testing 'Generic inline queries'
+[13:13:21] [INFO] testing 'MySQL inline queries'
+[13:13:21] [INFO] testing 'PostgreSQL inline queries'
+[13:13:21] [INFO] testing 'Microsoft SQL Server/Sybase inline queries'
+[13:13:21] [INFO] testing 'Oracle inline queries'
+[13:13:21] [INFO] testing 'MySQL >= 5.0.12 stacked queries (comment)'
+[13:13:22] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[13:13:23] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[13:13:24] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (DECLARE - comment)'
+[13:13:24] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[13:13:25] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[13:13:26] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (SLEEP)'
+[13:13:27] [INFO] testing 'MySQL >= 5.0.12 RLIKE time-based blind'
+[13:13:28] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[13:13:29] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[13:13:30] [INFO] testing 'Oracle AND time-based blind'
+[13:13:31] [INFO] testing 'MySQL >= 5.0.12 time-based blind - Parameter replace'
+[13:13:32] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[13:13:34] [INFO] testing 'MySQL UNION query (NULL) - 1 to 10 columns'
+[13:13:36] [WARNING] GET parameter 'Submit' does not seem to be injectable
+[13:13:36] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[13:13:36] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/home/kali/.local/share/sqlmap/output/results-10112026_0112pm.csv'
+[13:13:36] [WARNING] your sqlmap version is outdated
+
+[*] ending @ 13:13:36 /2026-10-11/
+
+17190 packets captured
+17190 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/attack_sqlmap_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 3.4M Oct 11 17:13 /home/vboxuser/ids-project/pcaps_lab/attack_sqlmap_run2.pcap
+
+==============================================
+[16/20] benign_web_run2
+CMD: for i in $(seq 1 60); do curl -s http://192.168.100.30/ > /dev/null; curl -s http://192.168.100.30/mutillidae/ > /dev/null; sleep 1; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+2468 packets captured
+2468 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_web_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.7M Oct 11 17:15 /home/vboxuser/ids-project/pcaps_lab/benign_web_run2.pcap
+
+==============================================
+[17/20] benign_web_run3
+CMD: for i in $(seq 1 40); do curl -s http://192.168.100.30/phpMyAdmin/ > /dev/null; curl -s http://192.168.100.30/dav/ > /dev/null; sleep 2; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+1068 packets captured
+1068 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_web_run3.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 322K Oct 11 17:16 /home/vboxuser/ids-project/pcaps_lab/benign_web_run3.pcap
+
+==============================================
+[18/20] benign_ftp_login_run2
+CMD: for i in $(seq 1 20); do curl -s ftp://msfadmin:msfadmin@192.168.100.30/ > /dev/null; sleep 3; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+676 packets captured
+676 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_ftp_login_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 64K Oct 11 17:17 /home/vboxuser/ids-project/pcaps_lab/benign_ftp_login_run2.pcap
+
+==============================================
+[19/20] benign_ssh_run2
+CMD: for i in $(seq 1 20); do sshpass -p msfadmin ssh -o StrictHostKeyChecking=no msfadmin@192.168.100.30 'ls; whoami; uptime' > /dev/null 2>&1; sleep 3; done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+269 packets captured
+269 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_ssh_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 70K Oct 11 17:19 /home/vboxuser/ids-project/pcaps_lab/benign_ssh_run2.pcap
+
+==============================================
+[20/20] benign_mixed_idle_run1
+CMD: for i in $(seq 1 30); do ping -c 1 192.168.100.30 > /dev/null; sleep $((RANDOM % 4 + 1)); done
+==============================================
+tcpdump: listening on enp0s8, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+72 packets captured
+72 packets received by filter
+0 packets dropped by kernel
+Saved: /home/vboxuser/ids-project/pcaps_lab/benign_mixed_idle_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 7.6K Oct 11 17:20 /home/vboxuser/ids-project/pcaps_lab/benign_mixed_idle_run1.pcap
+
+ALL DONE.
+total 151M
+-rw-rw-r-- 1 vboxuser vboxuser  11M Oct 10 22:32 attack_ab_httpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  17M Oct 11 17:10 attack_ab_httpflood_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 4.6M Oct 11 17:05 attack_hping_icmpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  53M Oct 10 22:24 attack_hping_synflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  15M Oct 11 17:04 attack_hping_synflood_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.6M Oct 10 22:24 attack_hping_udpflood_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.9M Oct 11 17:05 attack_hping_udpflood_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 279K Oct 10 22:23 attack_hydra_ftp_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 195K Oct 11 17:03 attack_hydra_ftp_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  17K Oct 10 22:23 attack_hydra_ssh_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 3.3K Oct 11 17:04 attack_hydra_ssh_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 3.0K Oct 11 17:04 attack_hydra_ssh_run3.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 2.6M Oct 10 22:34 attack_nikto_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  733 Oct 11 17:12 attack_nikto_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  11M Oct 10 22:20 attack_nmap_connect_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  11M Oct 11 16:34 attack_nmap_connect_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  75K Oct 11 16:34 attack_nmap_finscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  75K Oct 11 16:34 attack_nmap_nullscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  52K Oct 10 22:22 attack_nmap_pingsweep_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  45K Oct 10 22:21 attack_nmap_slow_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  45K Oct 11 17:02 attack_nmap_slow_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  12K Oct 10 22:20 attack_nmap_stealth_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.7M Oct 10 22:19 attack_nmap_synscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 9.6M Oct 11 16:34 attack_nmap_synscan_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  75K Oct 11 16:34 attack_nmap_xmasscan_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 699K Oct 10 22:36 attack_sqlmap_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 3.4M Oct 11 17:13 attack_sqlmap_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  44K Oct 10 22:38 benign_ftp_login_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  64K Oct 11 17:17 benign_ftp_login_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 7.6K Oct 11 17:20 benign_mixed_idle_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  47K Oct 10 22:38 benign_ssh_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  70K Oct 11 17:19 benign_ssh_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser  70K Oct 10 22:37 benign_web_run1.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 1.7M Oct 11 17:15 benign_web_run2.pcap
+-rw-rw-r-- 1 vboxuser vboxuser 322K Oct 11 17:16 benign_web_run3.pcap

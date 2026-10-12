@@ -1,0 +1,55 @@
+attack_ab_httpflood_run1            family=ab_httpflood         binary=1  flows=8000 
+attack_hping_icmpflood_run1         family=hping_icmpflood      binary=1  flows=1 
+attack_hping_synflood_run1          family=hping_synflood       binary=1  flows=30000 (sampled 30000 of 698822)
+attack_hping_udpflood_run1          family=hping_udpflood       binary=1  flows=30000 (sampled 30000 of 1672518)
+attack_hydra_ftp_run1               family=hydra_ftp            binary=1  flows=161 
+attack_hydra_ssh_run1               family=hydra_ssh            binary=1  flows=5 
+attack_nikto_run1                   family=nikto                binary=1  flows=33 
+attack_nmap_connect_run1            family=nmap_connect         binary=1  flows=30000 (sampled 30000 of 65672)
+attack_nmap_finscan_run1            family=nmap_finscan         binary=1  flows=509 
+attack_nmap_nullscan_run1           family=nmap_nullscan        binary=1  flows=509 
+attack_nmap_slow_run1               family=nmap_slow            binary=1  flows=111 
+attack_nmap_synscan_run1            family=nmap_synscan         binary=1  flows=30000 (sampled 30000 of 65535)
+attack_nmap_xmasscan_run1           family=nmap_xmasscan        binary=1  flows=510 
+attack_sqlmap_run1                  family=sqlmap               binary=1  flows=1505 
+benign_ftp_login_run1               family=ftp_login            binary=0  flows=41 
+benign_ftp_login_run2               family=ftp_login            binary=0  flows=120 
+benign_mixed_idle_run1              family=mixed_idle           binary=0  flows=1 
+benign_mysql_run1                   family=mysql                binary=0  flows=40 
+benign_smb_run1                     family=smb                  binary=0  flows=62 
+benign_ssh_run1                     family=ssh                  binary=0  flows=20 
+benign_ssh_run2                     family=ssh                  binary=0  flows=60 
+benign_web_run1                     family=web                  binary=0  flows=60 
+benign_web_run2                     family=web                  binary=0  flows=301 
+
+Done. Saved to: /home/vboxuser/ids-project/data/clean/lab_merged.parquet
+
+Final shape: (132049, 2)
+
+Binary balance:
+label_binary
+1    131344
+0       705
+
+Family counts:
+label_family
+hping_synflood     30000
+hping_udpflood     30000
+nmap_connect       30000
+nmap_synscan       30000
+ab_httpflood        8000
+sqlmap              1505
+nmap_xmasscan        510
+nmap_finscan         509
+nmap_nullscan        509
+web                  361
+hydra_ftp            161
+ftp_login            161
+nmap_slow            111
+ssh                   80
+smb                   62
+mysql                 40
+nikto                 33
+hydra_ssh              5
+hping_icmpflood        1
+mixed_idle             1

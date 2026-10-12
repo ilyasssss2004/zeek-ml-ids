@@ -1,0 +1,9 @@
+pcaps_lab/
+zeek_out/
+data/raw/
+data/clean/
+*.parquet
+venv/
+.venv/
+__pycache__/
+*.pyc

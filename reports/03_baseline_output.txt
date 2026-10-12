@@ -1,0 +1,44 @@
+{'attacks': 127722, 'recall': np.float64(0.9996), 'fpr': np.float64(0.001), 'precision': np.float64(0.9951), 'pr_auc': 0.9999, 'featureset': 'all', 'split': 'random', 'test_on': 'all'} [12s]
+{'attacks': 90694, 'recall': np.float64(0.0059), 'fpr': np.float64(0.0048), 'precision': np.float64(0.4773), 'pr_auc': 0.7404, 'featureset': 'all', 'split': 'holdout_file', 'test_on': 'Friday-Afternoon-PortScan'} [3s]
+{'attacks': 128014, 'recall': np.float64(0.6352), 'fpr': np.float64(0.002), 'precision': np.float64(0.9976), 'pr_auc': 0.9567, 'featureset': 'all', 'split': 'holdout_file', 'test_on': 'Friday-Afternoon-DDoS'} [13s]
+{'attacks': 1948, 'recall': np.float64(0.0), 'fpr': np.float64(0.0002), 'precision': np.float64(0.0), 'pr_auc': 0.0581, 'featureset': 'all', 'split': 'holdout_file', 'test_on': 'Friday-Morning-Bot'} [18s]
+{'attacks': 2143, 'recall': np.float64(0.8502), 'fpr': np.float64(0.0003), 'precision': np.float64(0.9717), 'pr_auc': 0.9372, 'featureset': 'all', 'split': 'holdout_file', 'test_on': 'Thursday-Morning-WebAttacks'} [9s]
+{'attacks': 9150, 'recall': np.float64(0.0022), 'fpr': np.float64(0.0005), 'precision': np.float64(0.0909), 'pr_auc': 0.3982, 'featureset': 'all', 'split': 'holdout_file', 'test_on': 'Tuesday-WorkingHours'} [16s]
+{'attacks': 193756, 'recall': np.float64(0.3788), 'fpr': np.float64(0.0001), 'precision': np.float64(0.9994), 'pr_auc': 0.9959, 'featureset': 'all', 'split': 'holdout_file', 'test_on': 'Wednesday-WorkingHours'} [23s]
+{'attacks': 127722, 'recall': np.float64(0.9994), 'fpr': np.float64(0.0012), 'precision': np.float64(0.994), 'pr_auc': 0.9999, 'featureset': 'no_dport', 'split': 'random', 'test_on': 'all'} [18s]
+{'attacks': 90694, 'recall': np.float64(0.0059), 'fpr': np.float64(0.0051), 'precision': np.float64(0.4629), 'pr_auc': 0.66, 'featureset': 'no_dport', 'split': 'holdout_file', 'test_on': 'Friday-Afternoon-PortScan'} [15s]
+{'attacks': 128014, 'recall': np.float64(0.6352), 'fpr': np.float64(0.0022), 'precision': np.float64(0.9975), 'pr_auc': 0.94, 'featureset': 'no_dport', 'split': 'holdout_file', 'test_on': 'Friday-Afternoon-DDoS'} [15s]
+{'attacks': 1948, 'recall': np.float64(0.0), 'fpr': np.float64(0.0003), 'precision': np.float64(0.0), 'pr_auc': 0.0343, 'featureset': 'no_dport', 'split': 'holdout_file', 'test_on': 'Friday-Morning-Bot'} [16s]
+{'attacks': 2143, 'recall': np.float64(0.8455), 'fpr': np.float64(0.0005), 'precision': np.float64(0.9597), 'pr_auc': 0.8873, 'featureset': 'no_dport', 'split': 'holdout_file', 'test_on': 'Thursday-Morning-WebAttacks'} [15s]
+{'attacks': 9150, 'recall': np.float64(0.0022), 'fpr': np.float64(0.0012), 'precision': np.float64(0.0402), 'pr_auc': 0.0955, 'featureset': 'no_dport', 'split': 'holdout_file', 'test_on': 'Tuesday-WorkingHours'} [16s]
+{'attacks': 193756, 'recall': np.float64(0.2692), 'fpr': np.float64(0.0003), 'precision': np.float64(0.998), 'pr_auc': 0.9743, 'featureset': 'no_dport', 'split': 'holdout_file', 'test_on': 'Wednesday-WorkingHours'} [12s]
+{'attacks': 127722, 'recall': np.float64(0.9945), 'fpr': np.float64(0.0018), 'precision': np.float64(0.991), 'pr_auc': 0.9994, 'featureset': 'no_dport_no_initwin', 'split': 'random', 'test_on': 'all'} [18s]
+{'attacks': 90694, 'recall': np.float64(0.0036), 'fpr': np.float64(0.0059), 'precision': np.float64(0.309), 'pr_auc': 0.6468, 'featureset': 'no_dport_no_initwin', 'split': 'holdout_file', 'test_on': 'Friday-Afternoon-PortScan'} [20s]
+{'attacks': 128014, 'recall': np.float64(0.6354), 'fpr': np.float64(0.0028), 'precision': np.float64(0.9967), 'pr_auc': 0.9428, 'featureset': 'no_dport_no_initwin', 'split': 'holdout_file', 'test_on': 'Friday-Afternoon-DDoS'} [16s]
+{'attacks': 1948, 'recall': np.float64(0.0), 'fpr': np.float64(0.0011), 'precision': np.float64(0.0), 'pr_auc': 0.0172, 'featureset': 'no_dport_no_initwin', 'split': 'holdout_file', 'test_on': 'Friday-Morning-Bot'} [17s]
+{'attacks': 2143, 'recall': np.float64(0.8348), 'fpr': np.float64(0.0011), 'precision': np.float64(0.9165), 'pr_auc': 0.7979, 'featureset': 'no_dport_no_initwin', 'split': 'holdout_file', 'test_on': 'Thursday-Morning-WebAttacks'} [20s]
+{'attacks': 9150, 'recall': np.float64(0.002), 'fpr': np.float64(0.0016), 'precision': np.float64(0.027), 'pr_auc': 0.0498, 'featureset': 'no_dport_no_initwin', 'split': 'holdout_file', 'test_on': 'Tuesday-WorkingHours'} [14s]
+{'attacks': 193756, 'recall': np.float64(0.3224), 'fpr': np.float64(0.0003), 'precision': np.float64(0.9982), 'pr_auc': 0.9236, 'featureset': 'no_dport_no_initwin', 'split': 'holdout_file', 'test_on': 'Wednesday-WorkingHours'} [19s]
+
+          featureset        split                     test_on  attacks  recall    fpr  precision  pr_auc
+                all       random                         all   127722  0.9996 0.0010     0.9951  0.9999
+                all holdout_file   Friday-Afternoon-PortScan    90694  0.0059 0.0048     0.4773  0.7404
+                all holdout_file       Friday-Afternoon-DDoS   128014  0.6352 0.0020     0.9976  0.9567
+                all holdout_file          Friday-Morning-Bot     1948  0.0000 0.0002     0.0000  0.0581
+                all holdout_file Thursday-Morning-WebAttacks     2143  0.8502 0.0003     0.9717  0.9372
+                all holdout_file        Tuesday-WorkingHours     9150  0.0022 0.0005     0.0909  0.3982
+                all holdout_file      Wednesday-WorkingHours   193756  0.3788 0.0001     0.9994  0.9959
+           no_dport       random                         all   127722  0.9994 0.0012     0.9940  0.9999
+           no_dport holdout_file   Friday-Afternoon-PortScan    90694  0.0059 0.0051     0.4629  0.6600
+           no_dport holdout_file       Friday-Afternoon-DDoS   128014  0.6352 0.0022     0.9975  0.9400
+           no_dport holdout_file          Friday-Morning-Bot     1948  0.0000 0.0003     0.0000  0.0343
+           no_dport holdout_file Thursday-Morning-WebAttacks     2143  0.8455 0.0005     0.9597  0.8873
+           no_dport holdout_file        Tuesday-WorkingHours     9150  0.0022 0.0012     0.0402  0.0955
+           no_dport holdout_file      Wednesday-WorkingHours   193756  0.2692 0.0003     0.9980  0.9743
+no_dport_no_initwin       random                         all   127722  0.9945 0.0018     0.9910  0.9994
+no_dport_no_initwin holdout_file   Friday-Afternoon-PortScan    90694  0.0036 0.0059     0.3090  0.6468
+no_dport_no_initwin holdout_file       Friday-Afternoon-DDoS   128014  0.6354 0.0028     0.9967  0.9428
+no_dport_no_initwin holdout_file          Friday-Morning-Bot     1948  0.0000 0.0011     0.0000  0.0172
+no_dport_no_initwin holdout_file Thursday-Morning-WebAttacks     2143  0.8348 0.0011     0.9165  0.7979
+no_dport_no_initwin holdout_file        Tuesday-WorkingHours     9150  0.0020 0.0016     0.0270  0.0498
+no_dport_no_initwin holdout_file      Wednesday-WorkingHours   193756  0.3224 0.0003     0.9982  0.9236
