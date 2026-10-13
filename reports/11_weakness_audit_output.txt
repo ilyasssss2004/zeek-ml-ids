@@ -1,0 +1,97 @@
+done: attack_ab_httpflood_run1
+done: attack_dirb_run1
+done: attack_enum4linux_run1
+done: attack_gobuster_run1
+done: attack_hping_icmpflood_run1
+done: attack_hping_synflood_run1
+done: attack_hping_udpflood_run1
+done: attack_hydra_ftp_run1
+done: attack_hydra_ssh_run1
+done: attack_hydra_telnet_run1
+done: attack_medusa_ftp_run1
+done: attack_nikto_run1
+done: attack_nmap_connect_run1
+done: attack_nmap_finscan_run1
+done: attack_nmap_nullscan_run1
+done: attack_nmap_slow_run1
+done: attack_nmap_synscan_run1
+done: attack_nmap_xmasscan_run1
+done: attack_sqlmap_run1
+done: benign_ftp_big_run1
+done: benign_ftp_login_run1
+done: benign_ftp_login_run2
+done: benign_idle_long_run1
+done: benign_idle_long_run2
+done: benign_mixed_idle_run1
+done: benign_mysql_run1
+done: benign_smb_run1
+done: benign_ssh_big_run1
+done: benign_ssh_run1
+done: benign_ssh_run2
+done: benign_telnet_run1
+done: benign_web_big_run1
+done: benign_web_run1
+done: benign_web_run2
+done: benign_web_varied_run1
+done: final_test_synscan_fresh
+done: fresh_benign_web
+done: fresh_hping_synflood
+done: fresh_hydra_ftp
+done: fresh_nikto
+done: fresh_sqlmap
+
+                        run  n_flows   rate                metric
+     benign_mixed_idle_run1        1 0.0000 FP_rate(lower=better)
+          benign_mysql_run1       40 0.0000 FP_rate(lower=better)
+            benign_smb_run1       62 0.0000 FP_rate(lower=better)
+        benign_web_big_run1      301 0.0000 FP_rate(lower=better)
+        benign_ssh_big_run1       82 0.0000 FP_rate(lower=better)
+         benign_telnet_run1       21 0.0000 FP_rate(lower=better)
+            benign_ssh_run2       60 0.0000 FP_rate(lower=better)
+            benign_ssh_run1       20 0.0000 FP_rate(lower=better)
+      benign_ftp_login_run1       41 0.0000 FP_rate(lower=better)
+      benign_ftp_login_run2      120 0.0000 FP_rate(lower=better)
+      benign_idle_long_run1        2 0.0000 FP_rate(lower=better)
+      benign_idle_long_run2        2 0.0000 FP_rate(lower=better)
+        benign_ftp_big_run1      120 0.0000 FP_rate(lower=better)
+     benign_web_varied_run1      101 0.0000 FP_rate(lower=better)
+            benign_web_run2      301 0.0000 FP_rate(lower=better)
+            benign_web_run1       60 0.0000 FP_rate(lower=better)
+           fresh_benign_web       40 0.0000 recall(higher=better)
+      attack_hydra_ssh_run1        5 0.8000 recall(higher=better)
+          attack_nikto_run1       33 0.9394 recall(higher=better)
+                fresh_nikto       33 0.9394 recall(higher=better)
+      attack_nmap_slow_run1      111 0.9820 recall(higher=better)
+            fresh_hydra_ftp       85 0.9882 recall(higher=better)
+     attack_enum4linux_run1      132 0.9924 recall(higher=better)
+      attack_hydra_ftp_run1      161 0.9938 recall(higher=better)
+   attack_ab_httpflood_run1     8000 1.0000 recall(higher=better)
+           attack_dirb_run1       29 1.0000 recall(higher=better)
+   attack_nmap_connect_run1    20000 1.0000 recall(higher=better)
+   attack_nmap_finscan_run1      509 1.0000 recall(higher=better)
+  attack_nmap_nullscan_run1      509 1.0000 recall(higher=better)
+attack_hping_icmpflood_run1        1 1.0000 recall(higher=better)
+ attack_hping_synflood_run1    20000 1.0000 recall(higher=better)
+ attack_hping_udpflood_run1    20000 1.0000 recall(higher=better)
+   attack_nmap_synscan_run1    20000 1.0000 recall(higher=better)
+         attack_sqlmap_run1     1505 1.0000 recall(higher=better)
+  attack_nmap_xmasscan_run1      510 1.0000 recall(higher=better)
+   attack_hydra_telnet_run1       20 1.0000 recall(higher=better)
+     attack_medusa_ftp_run1       80 1.0000 recall(higher=better)
+       attack_gobuster_run1       58 1.0000 recall(higher=better)
+   final_test_synscan_fresh     2001 1.0000 recall(higher=better)
+       fresh_hping_synflood    20000 1.0000 recall(higher=better)
+               fresh_sqlmap      291 1.0000 recall(higher=better)
+
+--- WORST 10 (lowest rate = weakest) ---
+                   run  n_flows  rate                metric
+benign_mixed_idle_run1        1   0.0 FP_rate(lower=better)
+     benign_mysql_run1       40   0.0 FP_rate(lower=better)
+       benign_smb_run1       62   0.0 FP_rate(lower=better)
+   benign_web_big_run1      301   0.0 FP_rate(lower=better)
+   benign_ssh_big_run1       82   0.0 FP_rate(lower=better)
+    benign_telnet_run1       21   0.0 FP_rate(lower=better)
+       benign_ssh_run2       60   0.0 FP_rate(lower=better)
+       benign_ssh_run1       20   0.0 FP_rate(lower=better)
+ benign_ftp_login_run1       41   0.0 FP_rate(lower=better)
+ benign_ftp_login_run2      120   0.0 FP_rate(lower=better)
