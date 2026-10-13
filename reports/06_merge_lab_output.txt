@@ -1,9 +1,15 @@
 attack_ab_httpflood_run1            family=ab_httpflood         binary=1  flows=8000 
+attack_dirb_run1                    family=dirb                 binary=1  flows=29 
+SKIP (no flowmeter.log): attack_dnsrecon_run1
+attack_enum4linux_run1              family=enum4linux           binary=1  flows=132 
+attack_gobuster_run1                family=gobuster             binary=1  flows=58 
 attack_hping_icmpflood_run1         family=hping_icmpflood      binary=1  flows=1 
 attack_hping_synflood_run1          family=hping_synflood       binary=1  flows=30000 (sampled 30000 of 698822)
 attack_hping_udpflood_run1          family=hping_udpflood       binary=1  flows=30000 (sampled 30000 of 1672518)
 attack_hydra_ftp_run1               family=hydra_ftp            binary=1  flows=161 
 attack_hydra_ssh_run1               family=hydra_ssh            binary=1  flows=5 
+attack_hydra_telnet_run1            family=hydra_telnet         binary=1  flows=20 
+attack_medusa_ftp_run1              family=medusa_ftp           binary=1  flows=80 
 attack_nikto_run1                   family=nikto                binary=1  flows=33 
 attack_nmap_connect_run1            family=nmap_connect         binary=1  flows=30000 (sampled 30000 of 65672)
 attack_nmap_finscan_run1            family=nmap_finscan         binary=1  flows=509 
@@ -12,24 +18,37 @@ attack_nmap_slow_run1               family=nmap_slow            binary=1  flows=
 attack_nmap_synscan_run1            family=nmap_synscan         binary=1  flows=30000 (sampled 30000 of 65535)
 attack_nmap_xmasscan_run1           family=nmap_xmasscan        binary=1  flows=510 
 attack_sqlmap_run1                  family=sqlmap               binary=1  flows=1505 
+benign_ftp_big_run1                 family=ftp_big              binary=0  flows=120 
 benign_ftp_login_run1               family=ftp_login            binary=0  flows=41 
 benign_ftp_login_run2               family=ftp_login            binary=0  flows=120 
+benign_idle_long_run1               family=idle_long            binary=0  flows=2 
+benign_idle_long_run2               family=idle_long            binary=0  flows=2 
 benign_mixed_idle_run1              family=mixed_idle           binary=0  flows=1 
 benign_mysql_run1                   family=mysql                binary=0  flows=40 
 benign_smb_run1                     family=smb                  binary=0  flows=62 
+benign_ssh_big_run1                 family=ssh_big              binary=0  flows=82 
 benign_ssh_run1                     family=ssh                  binary=0  flows=20 
 benign_ssh_run2                     family=ssh                  binary=0  flows=60 
+benign_telnet_run1                  family=telnet               binary=0  flows=21 
+benign_web_big_run1                 family=web_big              binary=0  flows=301 
 benign_web_run1                     family=web                  binary=0  flows=60 
 benign_web_run2                     family=web                  binary=0  flows=301 
+benign_web_varied_run1              family=web_varied           binary=0  flows=101 
+SKIP (held-out test set, excluded from training): final_test_synscan_fresh
+SKIP (held-out test set, excluded from training): fresh_benign_web
+SKIP (held-out test set, excluded from training): fresh_hping_synflood
+SKIP (held-out test set, excluded from training): fresh_hydra_ftp
+SKIP (held-out test set, excluded from training): fresh_nikto
+SKIP (held-out test set, excluded from training): fresh_sqlmap
 
 Done. Saved to: /home/vboxuser/ids-project/data/clean/lab_merged.parquet
 
-Final shape: (132049, 2)
+Final shape: (132997, 2)
 
 Binary balance:
 label_binary
-1    131344
-0       705
+1    131663
+0      1334
 
 Family counts:
 label_family
@@ -43,13 +62,24 @@ nmap_xmasscan        510
 nmap_finscan         509
 nmap_nullscan        509
 web                  361
+web_big              301
 hydra_ftp            161
 ftp_login            161
+enum4linux           132
+ftp_big              120
 nmap_slow            111
+web_varied           101
+ssh_big               82
+medusa_ftp            80
 ssh                   80
 smb                   62
+gobuster              58
 mysql                 40
 nikto                 33
+dirb                  29
+telnet                21
+hydra_telnet          20
 hydra_ssh              5
+idle_long              4
 hping_icmpflood        1
 mixed_idle             1

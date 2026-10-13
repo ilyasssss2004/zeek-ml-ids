@@ -38,6 +38,9 @@ writer = None
 for folder in sorted(BASE.iterdir()):
     if not folder.is_dir():
         continue
+    if folder.name.startswith("fresh_") or folder.name.startswith("final_test_"):
+        print(f"SKIP (held-out test set, excluded from training): {folder.name}")
+        continue
     log_path = folder / "flowmeter.log"
     if not log_path.exists():
         print(f"SKIP (no flowmeter.log): {folder.name}")
