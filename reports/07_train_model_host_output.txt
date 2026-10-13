@@ -1,0 +1,108 @@
+/home/vboxuser/zeek-ml/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1435: FutureWarning: 'n_jobs' has no effect since 1.8 and will be removed in 1.10. You provided 'n_jobs=-1', please leave it unspecified.
+  warnings.warn(msg, category=FutureWarning)
+/home/vboxuser/zeek-ml/.venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 2000 iteration(s) (status=1):
+STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
+
+Increase the number of iterations to improve the convergence (max_iter=2000).
+You might also want to scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+Please also refer to the documentation for alternative solver options:
+    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+  n_iter_i = _check_optimize_result(
+Loaded: (132997, 89)
+Columns: ['uid', 'flow_duration', 'flow_duration_us', 'fwd_pkts_tot', 'bwd_pkts_tot', 'fwd_data_pkts_tot', 'bwd_data_pkts_tot', 'fwd_pkts_per_sec', 'bwd_pkts_per_sec', 'flow_pkts_per_sec', 'down_up_ratio', 'fwd_header_size_tot', 'fwd_header_size_min', 'fwd_header_size_max', 'bwd_header_size_tot', 'bwd_header_size_min', 'bwd_header_size_max', 'flow_FIN_flag_count', 'flow_SYN_flag_count', 'flow_RST_flag_count', 'fwd_PSH_flag_count', 'bwd_PSH_flag_count', 'flow_ACK_flag_count', 'fwd_URG_flag_count', 'bwd_URG_flag_count', 'flow_CWR_flag_count', 'flow_ECE_flag_count', 'fwd_pkts_payload.min', 'fwd_pkts_payload.max', 'fwd_pkts_payload.tot', 'fwd_pkts_payload.avg', 'fwd_pkts_payload.std', 'bwd_pkts_payload.min', 'bwd_pkts_payload.max', 'bwd_pkts_payload.tot', 'bwd_pkts_payload.avg', 'bwd_pkts_payload.std', 'flow_pkts_payload.min', 'flow_pkts_payload.max', 'flow_pkts_payload.tot', 'flow_pkts_payload.avg', 'flow_pkts_payload.std', 'fwd_iat.min', 'fwd_iat.max', 'fwd_iat.tot', 'fwd_iat.avg', 'fwd_iat.std', 'bwd_iat.min', 'bwd_iat.max', 'bwd_iat.tot', 'bwd_iat.avg', 'bwd_iat.std', 'flow_iat.min', 'flow_iat.max', 'flow_iat.tot', 'flow_iat.avg', 'flow_iat.std', 'payload_bytes_per_second', 'fwd_subflow_pkts', 'bwd_subflow_pkts', 'fwd_subflow_bytes', 'bwd_subflow_bytes', 'fwd_bulk_bytes', 'bwd_bulk_bytes', 'fwd_bulk_packets', 'bwd_bulk_packets', 'fwd_bulk_rate', 'bwd_bulk_rate', 'active.min', 'active.max', 'active.tot', 'active.avg', 'active.std', 'idle.min', 'idle.max', 'idle.tot', 'idle.avg', 'idle.std', 'fwd_init_window_size', 'bwd_init_window_size', 'fwd_last_window_size', 'bwd_last_window_size', '_conn_count_10', '_distinct_ports_10', '_conn_count_30', '_distinct_ports_30', 'label_binary', 'label_family', 'source_run']
+Categorical columns to encode: []
+Feature count: 85
+
+Trainable rows: 132685  Holdout rows: 312
+Trainable binary balance:
+ label_binary
+1    131352
+0      1333
+
+Train pos=98513 neg=1000 scale_pos_weight(for weighting benign up)=98.51
+
+=== Training logistic_regression ===
+Internal test  PR-AUC=1.0000  ROC-AUC=0.9983
+              precision    recall  f1-score   support
+
+      benign       0.85      1.00      0.92       333
+      attack       1.00      1.00      1.00     32839
+
+    accuracy                           1.00     33172
+   macro avg       0.93      1.00      0.96     33172
+weighted avg       1.00      1.00      1.00     33172
+
+Holdout families performance (never trained on):
+  hydra_ssh            n=5      recall=0.8
+  nmap_slow            n=111    recall=0.9369369369369369
+  nikto                n=33     recall=0.8787878787878788
+  hydra_ftp            n=161    recall=0.9875776397515528
+  hping_icmpflood      n=1      recall=1.0
+  mixed_idle           n=1      recall=nan
+
+=== Training random_forest ===
+Internal test  PR-AUC=1.0000  ROC-AUC=1.0000
+              precision    recall  f1-score   support
+
+      benign       1.00      1.00      1.00       333
+      attack       1.00      1.00      1.00     32839
+
+    accuracy                           1.00     33172
+   macro avg       1.00      1.00      1.00     33172
+weighted avg       1.00      1.00      1.00     33172
+
+Holdout families performance (never trained on):
+  hydra_ssh            n=5      recall=0.8
+  nmap_slow            n=111    recall=0.9819819819819819
+  nikto                n=33     recall=0.9696969696969697
+  hydra_ftp            n=161    recall=0.9937888198757764
+  hping_icmpflood      n=1      recall=1.0
+  mixed_idle           n=1      recall=nan
+
+=== Training lightgbm ===
+Internal test  PR-AUC=1.0000  ROC-AUC=1.0000
+              precision    recall  f1-score   support
+
+      benign       1.00      1.00      1.00       333
+      attack       1.00      1.00      1.00     32839
+
+    accuracy                           1.00     33172
+   macro avg       1.00      1.00      1.00     33172
+weighted avg       1.00      1.00      1.00     33172
+
+Holdout families performance (never trained on):
+  hydra_ssh            n=5      recall=0.0
+  nmap_slow            n=111    recall=0.9819819819819819
+  nikto                n=33     recall=0.9393939393939394
+  hydra_ftp            n=161    recall=0.9937888198757764
+  hping_icmpflood      n=1      recall=0.0
+  mixed_idle           n=1      recall=nan
+
+=== Training xgboost ===
+Internal test  PR-AUC=1.0000  ROC-AUC=1.0000
+              precision    recall  f1-score   support
+
+      benign       1.00      1.00      1.00       333
+      attack       1.00      1.00      1.00     32839
+
+    accuracy                           1.00     33172
+   macro avg       1.00      1.00      1.00     33172
+weighted avg       1.00      1.00      1.00     33172
+
+Holdout families performance (never trained on):
+  hydra_ssh            n=5      recall=0.0
+  nmap_slow            n=111    recall=0.9819819819819819
+  nikto                n=33     recall=0.8787878787878788
+  hydra_ftp            n=161    recall=0.9937888198757764
+  hping_icmpflood      n=1      recall=1.0
+  mixed_idle           n=1      recall=nan
+
+=== WINNER: random_forest (PR-AUC=1.0000) ===
+Saved model to: /home/vboxuser/ids-project/models/best_model.joblib
+
+All model scores:
+  logistic_regression  PR-AUC=1.0000  ROC-AUC=0.9983
+  random_forest        PR-AUC=1.0000  ROC-AUC=1.0000
+  lightgbm             PR-AUC=1.0000  ROC-AUC=1.0000
+  xgboost              PR-AUC=1.0000  ROC-AUC=1.0000
