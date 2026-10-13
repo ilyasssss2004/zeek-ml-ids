@@ -1,0 +1,54 @@
+attack_ab_httpflood_run1            family=ab_httpflood         binary=1  flows=8000  http_rows_matched=8000
+attack_dirb_run1                    family=dirb                 binary=1  flows=29  http_rows_matched=29
+SKIP (no flowmeter.log): attack_dnsrecon_run1
+attack_enum4linux_run1              family=enum4linux           binary=1  flows=132  http_rows_matched=0
+attack_gobuster_run1                family=gobuster             binary=1  flows=58  http_rows_matched=53
+attack_hping_icmpflood_run1         family=hping_icmpflood      binary=1  flows=1  http_rows_matched=0
+attack_hping_synflood_run1          family=hping_synflood       binary=1  flows=20000  http_rows_matched=0
+attack_hping_udpflood_run1          family=hping_udpflood       binary=1  flows=20000  http_rows_matched=0
+attack_hydra_ftp_run1               family=hydra_ftp            binary=1  flows=161  http_rows_matched=0
+attack_hydra_ssh_run1               family=hydra_ssh            binary=1  flows=5  http_rows_matched=0
+attack_hydra_ssh_run2               family=hydra_ssh            binary=1  flows=5  http_rows_matched=0
+attack_hydra_ssh_run3               family=hydra_ssh            binary=1  flows=7  http_rows_matched=0
+attack_hydra_ssh_run4               family=hydra_ssh            binary=1  flows=13  http_rows_matched=0
+attack_hydra_telnet_run1            family=hydra_telnet         binary=1  flows=20  http_rows_matched=0
+attack_medusa_ftp_run1              family=medusa_ftp           binary=1  flows=80  http_rows_matched=0
+attack_nikto_run1                   family=nikto                binary=1  flows=33  http_rows_matched=32
+attack_nmap_connect_run1            family=nmap_connect         binary=1  flows=20000  http_rows_matched=0
+attack_nmap_finscan_run1            family=nmap_finscan         binary=1  flows=509  http_rows_matched=0
+attack_nmap_nullscan_run1           family=nmap_nullscan        binary=1  flows=509  http_rows_matched=0
+attack_nmap_slow_run1               family=nmap_slow            binary=1  flows=111  http_rows_matched=0
+attack_nmap_synscan_run1            family=nmap_synscan         binary=1  flows=20000  http_rows_matched=0
+attack_nmap_xmasscan_run1           family=nmap_xmasscan        binary=1  flows=510  http_rows_matched=0
+attack_sqlmap_run1                  family=sqlmap               binary=1  flows=1505  http_rows_matched=1504
+benign_ftp_big_run1                 family=ftp_big              binary=0  flows=120  http_rows_matched=0
+benign_ftp_login_run1               family=ftp_login            binary=0  flows=41  http_rows_matched=0
+benign_ftp_login_run2               family=ftp_login            binary=0  flows=120  http_rows_matched=0
+benign_idle_long_run1               family=idle_long            binary=0  flows=2  http_rows_matched=0
+benign_idle_long_run2               family=idle_long            binary=0  flows=2  http_rows_matched=0
+benign_mixed_idle_run1              family=mixed_idle           binary=0  flows=1  http_rows_matched=0
+benign_mysql_run1                   family=mysql                binary=0  flows=40  http_rows_matched=0
+benign_smb_run1                     family=smb                  binary=0  flows=62  http_rows_matched=0
+benign_ssh_big_run1                 family=ssh_big              binary=0  flows=82  http_rows_matched=0
+benign_ssh_run1                     family=ssh                  binary=0  flows=20  http_rows_matched=0
+benign_ssh_run2                     family=ssh                  binary=0  flows=60  http_rows_matched=0
+benign_telnet_run1                  family=telnet               binary=0  flows=21  http_rows_matched=0
+benign_web_big_run1                 family=web_big              binary=0  flows=301  http_rows_matched=300
+benign_web_run1                     family=web                  binary=0  flows=60  http_rows_matched=60
+benign_web_run2                     family=web                  binary=0  flows=301  http_rows_matched=300
+benign_web_varied_run1              family=web_varied           binary=0  flows=101  http_rows_matched=100
+SKIP (held-out test set): final_test_synscan_fresh
+SKIP (held-out test set): fresh_benign_web
+SKIP (held-out test set): fresh_hping_synflood
+SKIP (held-out test set): fresh_hydra_ftp
+SKIP (held-out test set): fresh_nikto
+SKIP (held-out test set): fresh_sqlmap
+stealth_test_slow                   family=stealth_test_slow    binary=1  flows=56  http_rows_matched=0
+stealth_test_ultraslow              family=stealth_test_ultraslow binary=1  flows=11  http_rows_matched=0
+
+Done. Saved to: /home/vboxuser/ids-project/data/clean/lab_merged_http.parquet
+
+Final shape: (93089, 2)
+label_binary
+1    91755
+0     1334

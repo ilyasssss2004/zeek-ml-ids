@@ -14,7 +14,7 @@ from sklearn.metrics import (
 import lightgbm as lgb
 import xgboost as xgb
 
-DATA = Path.home() / "ids-project" / "data" / "clean" / "lab_merged.parquet"
+DATA = Path.home() / "ids-project" / "data" / "clean" / "lab_merged_http.parquet"
 MODEL_DIR = Path.home() / "ids-project" / "models"
 MODEL_DIR.mkdir(parents=True, exist_ok=True)
 
