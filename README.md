@@ -33,16 +33,30 @@ Beyond Zeek-flowmeter's ~80 native flow statistics, two additional feature sets 
 
 ## Model comparison
 
-Four models were trained and compared on the same dataset (reasonable default settings, no hyperparameter search):
+Four models were trained and compared on the final dataset (86 features: ~80 native Zeek-flowmeter stats + HTTP payload features), using default settings, no hyperparameter search.
 
-| Model | Internal PR-AUC | Internal ROC-AUC | Benign precision | Strengths | Weaknesses |
-|---|---|---|---|---|---|
-| Logistic Regression | 0.9999 | 0.9962–0.9986 | 0.44–0.85 | Fast, interpretable, baseline | Struggles with benign precision as benign class grew more diverse; needed engineered features (host-window) to compensate for inability to learn complex interactions |
-| Random Forest | **1.0000** | **1.0000** | **0.99–1.00** | Best overall recall and precision across nearly every attack family; most robust to feature additions | Larger model file than linear baseline; less interpretable than logistic regression |
-| LightGBM | 1.0000 | 0.9999–1.0000 | 0.99–1.00 | Fast training, strong recall on most families | Unstable on smallest category (hydra_ssh: 0–3% in some runs) |
-| XGBoost | 1.0000 | 0.9998–1.0000 | 0.99–1.00 | Strong recall on most families | Also unstable on hydra_ssh; occasionally missed hping_icmpflood (n=1 sample) |
+**Internal test (25% held-out split, same families as training):**
 
-**Winner: Random Forest** — selected for highest and most consistent PR-AUC, and the strongest, most stable holdout-family generalization across every round of retraining as the dataset and features evolved.
+| Model | PR-AUC | ROC-AUC | Benign precision | Benign recall | Attack precision | Attack recall |
+|---|---|---|---|---|---|---|
+| Logistic Regression | 0.9999 | 0.9962 | 0.44 | 0.99 | 1.00 | 0.98 |
+| **Random Forest** | **1.0000** | **1.0000** | 0.99 | 1.00 | 1.00 | 1.00 |
+| LightGBM | 1.0000 | 1.0000 | 0.99 | 0.99 | 1.00 | 1.00 |
+| XGBoost | 1.0000 | 1.0000 | 1.00 | 0.99 | 1.00 | 1.00 |
+
+**Holdout family recall** (6 families with zero training exposure — the real generalization test):
+
+| Family | Logistic Regression | Random Forest | LightGBM | XGBoost |
+|---|---|---|---|---|
+| hydra_ssh | 0.80 | 0.80 | 0.03 | 1.00 |
+| nmap_slow | 0.955 | 0.991 | 0.991 | 0.991 |
+| nikto | 0.909 | 1.00 | 1.00 | 0.727 |
+| hydra_ftp | 0.994 | 1.00 | 1.00 | 0.994 |
+| hping_icmpflood | 1.00 | 1.00 | 0.00 | 0.00 |
+
+(hydra_ssh: n=30 flows, the smallest held-out category; hping_icmpflood: n=1, a single aggregated ICMP flow, see Feature engineering notes. A 7th holdout, mixed_idle, is pure benign with no attack rows to score recall against.)
+
+**Winner: Random Forest.** It ties or beats every other model on every holdout family except hydra_ssh (tied with logistic regression), has the best internal PR-AUC/ROC-AUC, and — unlike LightGBM and XGBoost — shows no catastrophic single-category failure (LightGBM drops to 3% on hydra_ssh and 0% on icmpflood; XGBoost drops to 73% on nikto). Consistency across attack types, not just peak score, drove the selection.
 
 ## Results (final model: Random Forest)
 
