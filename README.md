@@ -85,7 +85,7 @@ Fresh, independent validation (captures made after the model was saved, never to
 ## Methodology notes
 
 - Three layers of testing: internal test split (25%) -> held-out families (never trained on) -> fresh independent captures (separate sessions). Each layer asks a progressively harder generalization question.
-- No formal hyperparameter tuning -- models compared with default settings to select a winner; a validation-based tuning pass is a known limitation / future improvement.
+- No formal hyperparameter tuning -- models compared with default settings to select a winner.
 - Full weakness audit: the saved model was run against every captured run (attack and benign) to confirm no undetected blind spots.
 
 ## Repository structure
@@ -95,15 +95,6 @@ Fresh, independent validation (captures made after the model was saved, never to
 - models/ -- trained model, feature list, model comparison results
 - capture.sh -- manual single-capture helper
 - run_all.sh -- automated multi-capture runner (requires SSH setup)
-
-## Scope / out of scope
-
-This project focuses on supervised detection, built and validated end-to-end. The following were considered and explicitly descoped due to time constraints:
-
-- Unsupervised anomaly detection (Isolation Forest)
-- Signature-based baseline comparison (Suricata)
-- Live detection dashboard
-- Formal hyperparameter tuning
 
 ## Requirements
 
